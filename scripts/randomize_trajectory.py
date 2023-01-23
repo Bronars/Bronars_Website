@@ -87,8 +87,9 @@ def randomize_actions(actions, mag, stable_frq, stable_type, stable_buff, stable
     np.random.seed(int(time.time()))
     s1, s2 = actions.shape
     randomizer = np.random.uniform(low = -mag, high = mag, size = (s1, s2))
-    #randomizer[:, 6] = 0
-    #randomizer[:, -1] = 0
+    if stable_grip !=0:
+        randomizer[:, 6] = 0
+        #randomizer[:, -1] = 0
     if stable_type == 0:
         frq = np.arange(0, actions.shape[0], stable_frq)
     else:

@@ -1,4 +1,6 @@
 """
+Written by Danfei Xu
+
 Recollect data by using a joint position controller to try and track the
 reference trajectories.
 
