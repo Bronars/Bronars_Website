@@ -1,2 +1,2 @@
-# Bronars_Website
-Personal Website with my current work and past accomplishments
+# RL2_robomimic
+Scripts for robomimic written by Matthew Bronars
